@@ -14,7 +14,7 @@ const images = () => {
     imgPopup.style.alignItems = 'center';
     imgPopup.style.display = 'none';
     bigImage.style.cssText = 'width: 50%; height: 70%;';
-    
+
 
 
     workSection.addEventListener('click', (e) => {
@@ -34,6 +34,7 @@ const images = () => {
             imgPopup.style.display = 'none';
             document.body.style.overflow = '';
             document.body.style.marginRight = `0px`;
+            imgPopup.remove();
         }
     });
 

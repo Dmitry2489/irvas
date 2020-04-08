@@ -45,11 +45,10 @@
                      formDate.append(key, state[key]);
                  }
              }
-
              postData('assets/server.php', formDate)
                  .then(res => {
                      console.log(res);
-                    //  alert(`Данные которые уходят на сервер ${res}`);
+                     //  alert(`Данные которые уходят на сервер ${state}`);
                      statusMessage.textContent = message.success;
                  })
                  .catch(() => statusMessage.textContent = message.failure)
