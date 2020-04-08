@@ -7,19 +7,19 @@ const images = () => {
         scroll = calcScroll();
 
     imgPopup.classList.add('popup');
-    workSection.appendChild(imgPopup);
+    bigImage.classList.add('faded');
 
     imgPopup.appendChild(bigImage);
     imgPopup.style.justifyContent = 'center';
     imgPopup.style.alignItems = 'center';
     imgPopup.style.display = 'none';
     bigImage.style.cssText = 'width: 50%; height: 70%;';
-    bigImage.classList.add('faded');
+    
 
 
     workSection.addEventListener('click', (e) => {
+        workSection.appendChild(imgPopup);
         e.preventDefault();
-
         let target = e.target;
         if (target && target.classList.contains('preview')) {
             imgPopup.style.display = 'flex';
