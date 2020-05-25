@@ -30,7 +30,7 @@ const timer = (id, deadline) => {
             hours = timer.querySelector('#hours'),
             minutes = timer.querySelector('#minutes'),
             seconds = timer.querySelector('#seconds'),
-            timerInterva = setInterval(upDateClock, 1000);
+            timerInterval = setInterval(upDateClock, 1000);
         upDateClock();
         function upDateClock() {
             const t = getTimeRemaining(endtime);
@@ -46,13 +46,13 @@ const timer = (id, deadline) => {
                 hours.textContent = '00';
                 minutes.textContent = '00';
                 seconds.textContent = '00';
-                clearInterval(timerInterva);
+                clearInterval(timerInterval);
             }
 
         }
 
     };
-    setClock(id, deadline)
+    setClock(id, deadline);
 
 
 };

@@ -56,7 +56,7 @@
                      clearInputs();
                      setTimeout(() => {
                          statusMessage.remove();
-                     }, 5000);
+                     }, 60000);
                  }, );
 
          })
